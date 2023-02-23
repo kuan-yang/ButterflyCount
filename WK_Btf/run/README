@@ -1,0 +1,10 @@
+#Step 1 running example: compile
+./compile
+
+#Step 2 running example: txt-to-bin
+./bi-txt-to-bin.sh trackers
+
+#Step 3 running example: different algorithms in 32 threads
+./bi-rec-count.sh trackers 32 1 #BFC-VP++
+./bi-rec-count.sh trackers 32 0 1 #BFC-VP
+./bi-rec-count.sh trackers 32 -1 1 #naive
